@@ -3,7 +3,11 @@ html, body {
     padding: 0;
     margin: 0;
 }
-
+header{
+  background:#030303;
+  padding:30px 0 50px;
+  margin-bottom:100px;
+}
 body {
     font: 14px/25px Arial, Helvetica, sans-serif;
     font-family: 'Teko', sans-serif;
@@ -16,6 +20,7 @@ body {
 #cssmenu {
     width: auto;
     padding: 0;
+    margin-top: 80px;
     line-height: 1;
     display: block;
     position: relative;
@@ -71,7 +76,7 @@ body {
     transition: max-height 0.4s ease-out;
     background: #ffffff;
   }
-  /*#cssmenu ul li ul li.has-sub:after {
+  #cssmenu ul li ul li.has-sub:after {
     display: block;
     position: absolute;
     content: "";
@@ -82,7 +87,7 @@ body {
     z-index: 1;
     top: 13px;
     right: 15px;
-  }*/
+  }
   #cssmenu.align-right ul li ul li.has-sub:after {
     right: auto;
     left: 15px;
@@ -234,9 +239,6 @@ body {
   #cssmenu > ul > li:hover > ul > li a{
        color: #333;
   }
-  #cssmenu #menu-button {
-    display: none;
-  }
   #cssmenu > ul > li > a {
     display: block;
   }
@@ -305,7 +307,7 @@ body {
       -moz-box-sizing: border-box;
       box-sizing: border-box;
       width: 100%;
-      padding: 12px 20px;
+      padding: 10px 20px;
     }
     #cssmenu ul > li:after {
       display: none;
@@ -341,41 +343,6 @@ body {
     }
     #cssmenu ul li ul li:hover > a {
       color: #000000;
-    }
-    #cssmenu #menu-button {
-      display: block;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-      width: 100%;
-      padding: 15px 20px;
-      text-transform: uppercase;
-      font-weight: 700;
-      font-size: 14px;
-      letter-spacing: 1px;
-      color: #131313;
-      cursor: pointer;
-    }
-    #cssmenu #menu-button:after {
-      display: block;
-      content: '';
-      position: absolute;
-      height: 3px;
-      width: 22px;
-      border-top: 2px solid #131313;
-      border-bottom: 2px solid #131313;
-      right: 20px;
-      top: 16px;
-    }
-    #cssmenu #menu-button:before {
-      display: block;
-      content: '';
-      position: absolute;
-      height: 3px;
-      width: 22px;
-      border-top: 2px solid #131313;
-      right: 20px;
-      top: 26px;
     }
     #cssmenu ul li a{color: #fff;}
     

@@ -1,0 +1,23 @@
+#photo{
+    position: relative;
+    left: 40%;
+    margin-bottom: -45px;
+}
+#searchtext{
+    position: absolute;
+    left: 80%;
+    top: 15px;
+}
+#dl{
+    text-decoration: none;
+    color:white;
+    position: absolute;
+    left:80%;
+}
+#box{
+    border-style: solid;
+    border-width: 3px;
+    position: relative;
+    width:85%;
+    left:80px;
+}
