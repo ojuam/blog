@@ -9,9 +9,24 @@
     <div id="login">
         <h1>Login</h1>
         <form method="POST">
-            <input type="text" required="required" placeholder="用户名" id="u"></input>
-            <input type="password" required="required" placeholder="密码" id="p"></input>
-            <button class="but" type="submit">登陆</button>
+            <input type="text" required="required" placeholder="用户名" id="yhm"></input>
+            <input type="password" required="required" placeholder="密码" id="mm"></input>
+            <button class="but" type="submit" onclick="check()">登陆</button>
         </form>
     </div>
+    <script>
+			function check(){
+				var name,psw;
+				name=document.getElementById("yhm").value;
+				psw=document.getElementById("mm").value;
+				if(name=="nxj"&&psw=="123456"){
+					alert("登录成功！");
+					window.location.href="./index.html";
+				}
+				else{
+					alert("用户名或密码出错！");
+					return;
+				}
+			}
+    </script>
 </body>
