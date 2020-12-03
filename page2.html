@@ -1,0 +1,97 @@
+<!DOCTYPE htmlL>
+<head>
+    <title>个人博客详情页</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="./menu.css">
+	<link rel="stylesheet" type="text/css" href="./photo.css">
+	<script type="text/javascript" src="./yanzheng.js"></script>
+</head>
+<body>
+    <div class="wrap-body">
+		<header class="main-header">
+				<div class="top-search">
+					<form id="form-container" action="">
+						<!--<input type="submit" id="searchsubmit" value="" />-->
+						<a class="search-submit-button" href="javascript:void(0)">
+							<i class="fa fa-search"></i>
+						</a>
+					    <div id="searchtext">
+							<input type="text" id="s" name="s" placeholder="Search">
+							<input type="submit" placeholder="提交">
+					    </div>
+					</form>
+					<a href='./denglu.html' id="dl" >登陆/注册</a>
+				</div>
+				<div class="t-center">
+					<div id="photo">
+						<img src="./logo.png" width="290px"/>	
+					</div>
+					<!-- Menu-main -->
+					<div id='cssmenu' class="align-center">
+						<ul>
+						   <li class="active"><a href='index.html'><span>Home</span></a></li>
+						   <li class=' has-sub'><a href='#'><span>Categories</span></a>
+							  <ul >
+								 <li class='has-sub'><a href='#'><span>Item 1</span></a>
+									<ul>
+									   <li><a href='#'><span>Sub Item</span></a></li>
+									   <li class='last'><a href='#'><span>Sub Item</span></a></li>
+									</ul>
+								 </li>
+								 <li class='has-sub'><a href='#'><span>Item 2</span></a>
+									<ul>
+									   <li><a href='#'><span>Sub Item</span></a></li>
+									   <li class='last'><a href='#'><span>Sub Item</span></a></li>
+									</ul>
+								 </li>
+							  </ul>
+						   </li>
+						   <li><a href='single.html'><span>About</span></a></li>
+						   <li><a href='archive.html'><span>Blog</span></a></li>
+						   <li class='last'><a href='contact.html'><span>Contacts</span></a></li>
+						</ul>
+					</div>
+				</div>
+		</header>
+    </div>
+    <div id='box'>
+        <div id="bt"><h2>《CF1037D Valid BFS?题解（双端队列）》</h2></div>
+        <div id="zz"><p>发布时间：2020.8.15&nbsp;&nbsp;&nbsp;&nbsp;作者：Celoria</p></div>
+        <div id='nr'>
+            <p style="font-size: 25px;">题面:</p>
+            <img src="./bfs.png" width="100%"><br>
+            <p style="font-size: 25px;">题意:</p>
+            <p>1.bfs序和层序遍历有一定的相似之处，所以首先很容易能想到对深度进行判断，如果当前节点的深度比之前出现过的深度都小，那这个bfs序必是不合法的<br>
+                2.但是深度判断不了子节点出现的先后顺序，所以考虑用deque存之前出现过的节点，每次从队尾插入新节点，并更新其父节点的度（用以判断其子节点是否全出现过），如果队首节点的子节点全都已经出现过，则从队首出队。如果出现非根节点的父节点不是队首节点，则说明子树顺序不合法。</p>
+            <p style="font-size: 25px;">代码:</p>
+            <img src="./bfs1.png" width="100%"><br>
+            <img src="./bfs2.png" width="100%"><br>
+        </div>
+    </div>
+    <br><br><br>
+    <div id=box>
+        <h2>评论区:</h2><br>
+        <div id='sbox'>
+            <p>ojuam:先码了！！！感谢博主分享</p><br>
+            <p>评论时间：2020.11.26.18:00</p>
+        </div>
+        <div id='sbox'>
+            <p>choumoon:好厉害，学到了！</p><br>
+            <p>评论时间：2020.11.26.18:05</p>
+        </div>
+        <br>
+    </div>
+    <br><br><br>
+    <div id='box'>
+        <h2>请提交你的评论内容：</h2><br>
+        <p>&nbsp;&nbsp;&nbsp;请输入你的用户名：</p><input type="text" required="required" placeholder="用户名" id="yhm1">
+        <p>&nbsp;&nbsp;&nbsp;请输入你的邮箱地址：</p><input type="text" required="required" placeholder="邮箱地址" id="yxdz"><br>
+        <p>&nbsp;&nbsp;&nbsp;请输入你的评论内容：</p><textarea cols="50" rows="12"></textarea><br>
+        <button id="tjan" type="submit" onclick="">提交评论</button>
+	</div>
+	<br><hr>
+	<div id="footer">
+		Copyright © 2020.Company name All rights reserved.
+	</div>
+</body>
+</html>
