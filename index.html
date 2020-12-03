@@ -3,7 +3,8 @@
     <title>个人博客</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" type="text/css" href="./menu.css">
-    <link rel="stylesheet" type="text/css" href="./photo.css">
+	<link rel="stylesheet" type="text/css" href="./photo.css">
+	<script type="text/javascript" src="./yanzheng.js"></script>
 </head>
 <body>
     <div class="wrap-body">
@@ -53,15 +54,17 @@
 				</div>
 		</header>
 	</div>
-	<div>
+	<div id="bk">
 	    <div id="box">
-		   <h3>这是一条博客</h3>
-		   <br><br><br>
+		   <a href='page1.html'>《如何系统性学习摄影后期调色》</a>
+		   <h6>&nbsp;&nbsp;&nbsp;发布时间：2020.11.26&nbsp;&nbsp;&nbsp;作者：zhyx</h6>
+		   <h4>常用手机摄影后期APP<br> 1.全能类<br>(1) Snapseed&nbsp;&nbsp;&nbsp;推荐指数:★★★★★<br>Snapseed可以说是近乎全能的修图软件，基本涵盖了我们平时修图的大部分需求。能对图像进行各项参数的细微调整;提供了局部修图、画笔、图层、曲线等工具，方便我们对图片中的局部细节进行精细调整;交互方面也比较友好。</h4>
 	   </div>
 	   <br>
 	   <div id="box">
-		   <h3>这是一条博客</h3>
-		   <br><br><br>
+		   <a href='page2.html'>《CF1037D Valid BFS?题解（双端队列）》</a>
+		   <h6>&nbsp;&nbsp;&nbsp;发布时间：2020.8.15&nbsp;&nbsp;&nbsp;作者：Celoria</h6>
+		   <h4>bfs序和层序遍历有一定的相似之处，所以首先很容易能想到对深度进行判断，如果当前节点的深度比之前出现过的深度都小，那这个bfs序必是不合法的。但是深度判断不了子节点出现的先后顺序，所以考虑用deque存之前出现过的节点，每次从队尾插入新节点，并更新其父节点的度（用以判断其子节点是否全出现过），如果队首节点的子节点全都已经出现过，则从队首出队。如果出现非根节点的父节点不是队首节点，则说明子树顺序不合法。</h4>
 		</div>
 		<br>
 	   <div id="box">
@@ -69,6 +72,9 @@
 		   <br><br><br>
 	    </div>
 	</div>
-	
+	<br><hr>
+	<div id="footer">
+		Copyright © 2020.Company name All rights reserved.
+	</div>
 </body>
 </html>

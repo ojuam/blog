@@ -1,5 +1,4 @@
 #photo{
-    position: relative;
     left: 40%;
     margin-bottom: -45px;
 }
@@ -21,4 +20,45 @@
     position: relative;
     width:85%;
     left:80px;
+}
+#box a{
+    font: 30px Arial, Helvetica, sans-serif;
+    font-family: 'Teko', sans-serif;
+    text-decoration: none;
+    display: block;
+    margin-bottom: -30px;
+    -webkit-transition: color .2s ease;
+    -moz-transition: color .2s ease;
+    -ms-transition: color .2s ease;
+    -o-transition: color .2s ease;
+    transition: color .2s ease;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color:black;
+}
+#box a:hover{
+    color:red;
+}
+#bt{
+    text-align: center;
+    color:black;
+}
+#zz{
+    text-align: center;
+    font-size:17px;
+}
+#nr p{
+    color:black;
+}
+#sbox{
+    border-style: solid;
+    border-width: 2px;
+    position: relative;
+    width:100%;
+    left:0;
+}
+#footer{
+    text-align: center;
+    font-size: 15px;
 }

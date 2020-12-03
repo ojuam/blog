@@ -3,11 +3,11 @@ function check(){
     name=document.getElementById("yhm").value;
     psw=document.getElementById("mm").value;
     if(name=="nxj"&&psw=="123456"){
-        alert("登录成功！");
         window.location.href="./index.html";
+        alert("登陆成功！");
     }
     else{
         alert("用户名或密码出错！");
-        return;
     }
+
 }
